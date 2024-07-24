@@ -1,0 +1,38 @@
+.dashboard {
+    background-color: #131619;
+    color: #fff;
+    padding: 20px;
+    border-radius: 24px;
+  }
+  .long{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+  }
+  
+  h2 {
+    color: #fff;
+  }
+  
+  .card {
+    background-color: #1a1e24;
+    border: none;
+  }
+  
+  .card-title {
+    color: #fff;
+  }
+  
+  .table {
+    color: #fff;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+  }
+  
+  .ml-2 {
+    margin-left: 10px;
+  }
+  

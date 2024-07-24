@@ -1,0 +1,82 @@
+body {
+height: 100vh;
+width: 100vw;
+background: #131619;
+margin: 0;
+padding: 0;
+
+}
+
+.onboarding-form {
+  background-color:  #131619;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  opacity: 0px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+padding: 0;
+}
+.input{
+  width: 30vw;
+  background: #363A3D;
+  color: white;
+}
+.input:focus{
+  background: #363A3D;
+  color: white;
+}
+.form-container {
+  background-color: black;
+  color: white;  
+  gap: 64px;
+  opacity: 0px;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50vw;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.img-fluid {
+
+  width: 50vw;
+  height: 100vh;
+}
+ .mt-3{
+  width: 30vw;
+ }
+
+.otp-inputs {
+  gap: 10px;
+}
+
+.otp-input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 5px;
+  background: #0e0d0d;
+  color: green;
+  border: 1px solid #ccc;
+}
+
+.otp-input:focus {
+  background: #0e0d0d;
+  color: green;
+}
+.otp-modal{
+  background: #1A1D21F5;
+  color: white;
+}
