@@ -85,3 +85,31 @@ Row{
   margin: 0;
   padding: 0;
 }
+
+@media only screen and (max-width: 440px){
+  .main{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+  }
+  .mymain{
+    width: 100vw;
+    overflow-y: none;
+  }
+  .image-container{
+    display: none;
+  }
+  .input1{
+    width: 80vw;
+    padding: 0;
+    margin: 0;
+  }
+  .fomr{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .text234{
+    width: 80vw;
+  }
+}

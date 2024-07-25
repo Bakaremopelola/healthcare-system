@@ -35,4 +35,47 @@
   .ml-2 {
     margin-left: 10px;
   }
-  
+@media only screen and (max-width: 440px){
+  .dashboard{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .ded{
+    width: 3em;
+  }
+  .mide{
+    width: 40vw;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5em;
+  }
+  .solid{
+    width: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+  }
+  .des{
+    width: 100vw;
+  }
+  .des2, .des2{
+    width: 90vw;
+  }
+  .des3{
+    width: 85vw;
+    font-size: 0.9em;
+  }
+  .ml-2{
+    font-size: 0.8em;
+  }
+  .titis{
+    font-size: 1em;
+  }
+  .slag{
+    font-size: 0.8em;
+  }
+
+}

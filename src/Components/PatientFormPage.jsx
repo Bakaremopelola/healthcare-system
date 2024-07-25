@@ -68,7 +68,7 @@ const PatientFormPage = ({ onSubmit }) => {
       <img src={ReactLogo} className='logo' alt="React Logo" />
         <h1 className='tits'>Welcome 👌</h1>
         <h4 className='tits'>Let us know more about yourself</h4>
-        <Form onSubmit={handleSubmit}>
+        <Form  className='fomr' onSubmit={handleSubmit}>
           <h2 className='mb-4'>Personal Information</h2>
           <Row className="mb-3">
             <Form.Group controlId="fullName">
@@ -268,7 +268,7 @@ const PatientFormPage = ({ onSubmit }) => {
           <Form.Group controlId="consentHealthCondition" className="mb-3">
             <Form.Check 
               type="checkbox" 
-              
+              className='text234'
               name="consent.healthCondition" 
               checked={formData.consent.healthCondition} 
               onChange={handleChange} 
@@ -282,6 +282,7 @@ const PatientFormPage = ({ onSubmit }) => {
               name="consent.dataUsage" 
               checked={formData.consent.dataUsage} 
               onChange={handleChange} 
+              className='text234'
               label="I agree to the usage of my data for medical purposes" 
               required 
             />
@@ -289,6 +290,7 @@ const PatientFormPage = ({ onSubmit }) => {
           <Form.Group controlId="consentPrivacyAgreement" className="mb-3">
             <Form.Check 
               type="checkbox" 
+              className='text234'
               name="consent.privacyAgreement" 
               checked={formData.consent.privacyAgreement} 
               onChange={handleChange} 

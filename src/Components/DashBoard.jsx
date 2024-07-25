@@ -37,10 +37,10 @@ const Dashboard = ({ appointments, onSchedule, onAttemptClose }) => {
   return (
     <Container fluid className="dashboard">
       <div className='long'>
-        <img src={logo} alt="Logo" />
-        <div>
-          <Button className='primary' onClick={handleShowScheduleModal}>Schedule appointment</Button>
-          <Button className='primary' onClick={() => handleShowCancelModal(null)}>Cancel appointment</Button>
+        <img src={logo} alt="Logo" className='ded'/>
+        <div className='mide'>
+          <Button className='primary solid' onClick={handleShowScheduleModal}>Schedule appointment</Button>
+          <Button className='primary solid' onClick={() => handleShowCancelModal(null)}>Cancel appointment</Button>
         </div>
       </div>
       <Row>
@@ -53,7 +53,7 @@ const Dashboard = ({ appointments, onSchedule, onAttemptClose }) => {
         <Col md={4}>
           <Card>
             <Card.Body>
-              <Card.Title>Total number of scheduled appointments</Card.Title>
+              <Card.Title className='titis'>Total number of scheduled appointments</Card.Title>
               <Card.Text as="div">
                 <h1>{appointments.filter(app => app.status === 'Scheduled').length}</h1>
               </Card.Text>
@@ -63,7 +63,7 @@ const Dashboard = ({ appointments, onSchedule, onAttemptClose }) => {
         <Col md={4}>
           <Card>
             <Card.Body>
-              <Card.Title>Total number of pending appointments</Card.Title>
+              <Card.Title className='titis'>Total number of pending appointments</Card.Title>
               <Card.Text as="div">
                 <h1>{appointments.filter(app => app.status === 'Pending').length}</h1>
               </Card.Text>
@@ -73,7 +73,7 @@ const Dashboard = ({ appointments, onSchedule, onAttemptClose }) => {
         <Col md={4}>
           <Card>
             <Card.Body>
-              <Card.Title>Total number of cancelled appointments</Card.Title>
+              <Card.Title className='titis'>Total number of cancelled appointments</Card.Title>
               <Card.Text as="div">
                 <h1>{appointments.filter(app => app.status === 'Cancelled').length}</h1>
               </Card.Text>
@@ -81,13 +81,13 @@ const Dashboard = ({ appointments, onSchedule, onAttemptClose }) => {
           </Card>
         </Col>
       </Row>
-      <Row className="mt-4">
-        <Col>
-          <Card>
-            <Card.Body>
-              <Table striped bordered hover>
-                <thead>
-                  <tr>
+      <Row className="mt-4 des">
+        <Col className='des2'>
+          <Card className='des2'>
+            <Card.Body className='des3'>
+              <Table striped bordered hover className='des3'>
+                <thead className='des3'> 
+                  <tr className='des3'>
                     <th>Patient</th>
                     <th>Date</th>
                     <th>Status</th>
@@ -95,15 +95,15 @@ const Dashboard = ({ appointments, onSchedule, onAttemptClose }) => {
                     <th>Action</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className='des3'>
                   {appointments.map((appointment, index) => (
                     <tr key={index}>
-                      <td>{appointment.patient}</td>
-                      <td>{appointment.date}</td>
-                      <td>{appointment.status}</td>
-                      <td>{appointment.doctor}</td>
+                      <td className='slag'>{appointment.patient}</td>
+                      <td className='slag'>{appointment.date}</td>
+                      <td className='slag'>{appointment.status}</td>
+                      <td className='slag'>{appointment.doctor}</td>
                       <td>
-                        <Button variant="success" onClick={handleShowScheduleModal}>Schedule</Button>
+                        <Button variant="success" className="ml-2" onClick={handleShowScheduleModal}>Schedule</Button>
                         <Button variant="danger" className="ml-2" onClick={() => handleShowCancelModal(appointment)}>Cancel</Button>
                       </td>
                     </tr>

@@ -50,3 +50,36 @@
     color: white;
   }
   
+
+
+  @media only screen and (max-width: 440px){
+    .logo{
+      width: 5em;
+    }
+    .mainwrapper{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      overflow-x: hidden;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    .appoint{
+      display: none;
+    }
+    .my-5{
+      margin: 0;
+      padding: 0;
+    }
+    .myform{
+      margin: 0;
+    }
+    .input1{
+      height: 3em;
+      padding: 0 1em;
+    }
+    .butts{
+      width: 80vw;
+    }
+  }

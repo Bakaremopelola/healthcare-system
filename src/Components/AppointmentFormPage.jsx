@@ -179,7 +179,7 @@ const AppointmentFormPage = ({ onSubmit }) => {
               onChange={handleChange}
             />
           </Form.Group>
-          <Button variant="success" type="submit" block>
+          <Button variant="success" className='butts' type="submit" block>
             Submit and continue
           </Button>
         </Form>

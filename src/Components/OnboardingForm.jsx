@@ -41,7 +41,7 @@ const OnboardingForm = ({ onShowModal }) => {
              </Col>
         <Col >
           <img
-            src={Illustration}
+           
             alt="Doctor"
             className="img-fluid"
           />

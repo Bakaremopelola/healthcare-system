@@ -80,3 +80,46 @@ padding: 0;
   background: #1A1D21F5;
   color: white;
 }
+
+
+@media only screen and (max-width: 440px){
+  .onboarding-form {
+    background-color:  #131619;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  padding: 0;
+  }
+  .form-container {
+    background-color: black;
+    color: white;  
+    gap: 64px;
+    opacity: 0px;
+    color: white;
+    padding: 2em 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  .input{
+    width: 70vw;
+    background: #363A3D;
+    color: white;
+  }
+  
+  .form-container h2, .form-container p{
+    margin-left: 2em;
+  }
+  .img-fluid {
+    display: none;
+  }
+}
