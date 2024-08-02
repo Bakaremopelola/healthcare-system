@@ -27,7 +27,7 @@ const OnboardingForm = ({ onShowModal }) => {
             </Form.Group>
             <Form.Group controlId="formPhoneNumber">
               <Form.Label>Phone number</Form.Label>
-              <Form.Control className='input' type="text" placeholder="+00 0342 0453 34" />
+              <Form.Control className='input' type="number" placeholder="+00 0342 0453 34" />
             </Form.Group>
             <Button variant="success"  type="submit" className="mt-3">
               Get Started
@@ -41,6 +41,7 @@ const OnboardingForm = ({ onShowModal }) => {
              </Col>
         <Col >
           <img
+            src={Illustration}
            
             alt="Doctor"
             className="img-fluid"

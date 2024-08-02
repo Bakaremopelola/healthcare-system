@@ -10,7 +10,7 @@ const OtpModal = ({ show, handleClose, handleVerify }) => {
     newOtp[index] = e.target.value;
     setOtp(newOtp);
 
-    // Move focus to the next input field if not the last one
+    
     if (e.target.value && index < otp.length - 1) {
       inputRefs.current[index + 1].focus();
     }

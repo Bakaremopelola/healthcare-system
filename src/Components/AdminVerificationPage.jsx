@@ -13,11 +13,11 @@ const AdminVerificationPage = ({ onSubmit, onAttemptClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle passkey verification logic here
+    
     console.log('Passkey entered:', passkey);
     onSubmit();
     setShowModal(false);
-    navigate('/dashboard'); // Navigate to the dashboard after verification
+    navigate('/dashboard'); 
   };
 
   return (

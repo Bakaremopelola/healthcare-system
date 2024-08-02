@@ -75,6 +75,7 @@ const AppointmentFormPage = ({ onSubmit }) => {
               <Form.Control
                 type="text"
                 name="name"
+                placeholder='Adrian Hajdin'
                 className='input1'
                 value={formData.name}
                 onChange={handleChange}
@@ -87,6 +88,7 @@ const AppointmentFormPage = ({ onSubmit }) => {
                 type="email"
                 className='input1'
                 name="email"
+                placeholder='adrianjamesatry@gmail.com'
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -100,6 +102,7 @@ const AppointmentFormPage = ({ onSubmit }) => {
                 type="date"
                 className='input1'
                 name="date"
+                placeholder='dd/mm/yyyy'
                 value={formData.date}
                 onChange={handleChange}
                 required
@@ -111,6 +114,7 @@ const AppointmentFormPage = ({ onSubmit }) => {
                 type="time"
                 className='input1'
                 name="time"
+                placeholder='hh:mm'
                 value={formData.time}
                 onChange={handleChange}
                 required

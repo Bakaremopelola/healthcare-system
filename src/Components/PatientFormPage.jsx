@@ -75,6 +75,7 @@ const PatientFormPage = ({ onSubmit }) => {
               <Form.Label>Full Name</Form.Label>
               <Form.Control 
                 type="text" 
+                placeholder='Adrian Hajdin'
                 name="fullName" 
                 className='input1'
                 value={formData.fullName} 
@@ -89,6 +90,7 @@ const PatientFormPage = ({ onSubmit }) => {
               <Form.Control 
                 className='input1'
                 type="email" 
+                placeholder='adrianjamesatry@gmail.com'
                 name="email" 
                 value={formData.email} 
                 onChange={handleChange} 
@@ -99,6 +101,7 @@ const PatientFormPage = ({ onSubmit }) => {
               <Form.Label>Phone Number</Form.Label>
               <Form.Control 
                 type="tel"
+                placeholder='+00 0342 0453 34'
                 className='input1' 
                 name="phoneNumber" 
                 value={formData.phoneNumber} 
@@ -113,6 +116,7 @@ const PatientFormPage = ({ onSubmit }) => {
               <Form.Label>Birth Date</Form.Label>
               <Form.Control 
                 type="date" 
+                placeholder='dd/mm/yyyy'
                 className='input1'
                 name="birthDate" 
                 value={formData.birthDate} 
@@ -136,6 +140,7 @@ const PatientFormPage = ({ onSubmit }) => {
               <Form.Label>Address</Form.Label>
               <Form.Control 
                 type="text" 
+                placeholder='20 Smith Street'
                 className='input1'
                 name="address" 
                 value={formData.address} 
@@ -147,6 +152,7 @@ const PatientFormPage = ({ onSubmit }) => {
               <Form.Label>Occupation</Form.Label>
               <Form.Control 
                 type="text" 
+                placeholder='Engineer'
                 className='input1'
                 name="occupation" 
                 value={formData.occupation} 
@@ -161,6 +167,7 @@ const PatientFormPage = ({ onSubmit }) => {
               <Form.Label>Emmergency Contact</Form.Label>
               <Form.Control 
                 type="text" 
+                placeholder='thomasjames'
                 className='input1'
                 name="guardianname" 
                 value={formData.guardianname} 
@@ -171,7 +178,8 @@ const PatientFormPage = ({ onSubmit }) => {
             <Form.Group as={Col} controlId="guardianphonenumber">
               <Form.Label>phoneNumber</Form.Label>
               <Form.Control 
-                type="text" 
+                type="number" 
+                placeholder='+233 0342 0453 34'
                 className='input1'
                 name="guardianphonenumber" 
                 value={formData.guardianphonenumber} 
@@ -185,7 +193,8 @@ const PatientFormPage = ({ onSubmit }) => {
             <Form.Group as={Col} controlId="height">
               <Form.Label>Height</Form.Label>
               <Form.Control 
-                type="text" 
+                type="text"
+                placeholder='5.8' 
                 className='input1'
                 name="medicalInfo.height" 
                 value={formData.medicalInfo.height} 
@@ -197,6 +206,7 @@ const PatientFormPage = ({ onSubmit }) => {
               <Form.Label>Weight</Form.Label>
               <Form.Control 
                 type="text" 
+                placeholder='65.5'
                 name="medicalInfo.weight" 
                 className='input1'
                 value={formData.medicalInfo.weight} 
@@ -210,6 +220,7 @@ const PatientFormPage = ({ onSubmit }) => {
               <Form.Label>Blood Type</Form.Label>
               <Form.Control 
                 type="text" 
+                placeholder='o+'
                 className='input1'
                 name="medicalInfo.bloodType" 
                 value={formData.medicalInfo.bloodType} 
@@ -255,7 +266,8 @@ const PatientFormPage = ({ onSubmit }) => {
             <Form.Group as={Col} controlId="idNumber">
               <Form.Label>ID Number</Form.Label>
               <Form.Control 
-                type="text" 
+                type="number"
+                placeholder='1234567890' 
                 className='input1'
                 name="identification.idNumber" 
                 value={formData.identification.idNumber} 
