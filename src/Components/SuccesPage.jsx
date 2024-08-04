@@ -14,7 +14,7 @@ const SuccessPage = ({ appointmentDetails, onClose }) => {
                 <img src="logo.png" alt="CarePulse Logo" className="mb-4" />
               </Card.Title>
               <Card.Text className="mb-4">
-                <h3>Your <span className="highlight">appointment request</span> has been successfully {appointmentDetails.status === 'Cancelled' ? 'cancelled' : 'submitted'}!</h3>
+                <h3>Your <span className="highlight">appointment request</span> has been successfully { 'submitted'}!</h3>
                 <p>We'll be in touch shortly to {appointmentDetails.status === 'Cancelled' ? 'acknowledge your cancellation' : 'confirm'}.</p>
               </Card.Text>
               <Card.Text className="appointment-details mt-4">
